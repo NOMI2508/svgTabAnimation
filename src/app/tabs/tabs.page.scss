@@ -1,185 +1,331 @@
 ion-tabs {
+    svg {
+        position: absolute;
+        bottom:-11px;
+        width:100%;
+    }
 
     // --------------Custom Semi Transparent & Rounded Tabs----------------------
     ion-tab-bar {
         position: absolute;
         bottom: 0;
-        width: 100vw;        
+        width: 100vw;
+        height: 55px;
         --background: transparent;
-         border-radius: 20px 20px 0 0;
-         --border: 0;
-         left:0; right: 0;
-        // justify-content: space-around;
-        // display:flex;
+        --border: 0;
         
+
         ion-tab-button {
-            --background:#fff ;
+            //--width:25%;
+            --background: #fff;
+           // border:2px solid red;
+
             --color: var(--ion-color-medium);
             --color-selected: var(--ion-color-dark);
+
             ion-icon {
                 font-size: 1.5rem;
                 transition: 0.7s;
             }
 
-            ion-label{
+            ion-label {
                 font-weight: bold;
                 //margin-top:20%;
-                transition: 1s;
-                transform: translateY(15px);
+                transition: .3s;
+                //transform: translateY(5px);
                 --color: #222327;
+                //bottom: 90px;
             }
         }
     }
+
     svg {
-        width: 80px;
-         margin-top: 16px;
-        
+        width: 97px;
+        margin-top: 24px;
+
         path {
             fill: #fff;
         }
     }
 
+    
 
 
-    .Kid {
-        animation: walking 3s  linear;
-    }
-    
-    
-    @keyframes walking {
-    
-        25% {
-            transform: translateX(200px);
-        }
-    
-        50% {
-            transform: translateX(400px);
-        }
-    
-        75% {
-            transform: translateX(600px);
-        }
-    
-        100% {
-            transform: translateX(800px);
-        }
-    
-    }
-
-
-
-
-
-    ion-tab-button.search {
-        margin-right: -1px;
-        margin-left: -2px;
-        border-top-right-radius: 20px;
-    }
+    // ion-tab-button.search {
+    //     margin-right: -1px;
+    //     margin-left: -2px;
+    //     border-top-right-radius: 20px;
+    // }
     // ion-tab-button.wishlist {
     //     //margin-left: -1px;
     //     margin-right: -2px;
     //     border-top-left-radius: 20px;
     // }
-    ion-tab-button.post {
-        margin-left: -1px;
-        margin-right: -2px;
-        border-top-left-radius: 20px;
-    }
+    // ion-tab-button.post {
+    //     margin-left: -1px;
+    //     margin-right: -2px;
+    //     border-top-left-radius: 20px;
+    // }
     ion-fab {
-        transition: 0.8s;
-        //width:50px;
-        height:75px;
+        transition: .5s;
+        //bottom:10px;
+        top: 583px;
+
 
         ion-fab-button {
-            
+            width: 65px;
+            height: 75px;
+            margin: 0px 0px -13px 15px;
+            padding: 0px 0px 10px 0px;
             --background: linear-gradient(to bottom, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+
             ion-icon {
                 font-size: 2rem;
             }
 
-            ion-label{
+            ion-label {
                 font-weight: bold;
-                margin-top:25%;
+                
                 --color: #222327;
 
             }
-         }
-    }
-
-    ion-fab.right-align{
-        margin-left: 0.9%;
-    }
-
-    ion-fab.left-align{
-        margin-left: -17%;
-    }
-
-    ion-fab.end-align{
-        margin-left: 13%;
-    }
-
-    ion-fab.start-align{
-        left: 22.7%;
-    }
-   ion-fab.lastEnd-align{
-       margin-left:25%;
-       margin-right: none;
-   }
-
-
-    @media  only screen  and (max-width: 900px) {
-        ion-fab.right-align{
-            margin-left: 2%;
         }
-    
-        ion-fab.left-align{
-            margin-left: -26%;
-        }
+    }
 
-        ion-fab.end-align{
-            margin-left:19%;
-        }
-        ion-fab.start-align{
-            left:9%;
+    ion-fab.right-align {
+        margin-left: -0.1%;
+    }
+
+    ion-fab.left-align {
+        margin-left: -12.4%;
+    }
+
+    ion-fab.end-align {
+        margin-left: 12.2%;
+    }
+
+    ion-fab.start-align {
+        left: 32.79%;
+    }
+
+    ion-fab.lastEnd-align {
+        //margin-left: -55%;
+        // margin-right: 10%;
+        //right: 90px;
+       
+    }
+
+
+    @media only screen and (max-width: 900px) {
+
+         svg {
+        width: 96px;
+        margin-top: 26px;
+
+        path {
+            fill: #fff;
         }
 
-        ion-fab.lastEnd-align{
-            margin-left:37%;
-               }
-      }
 
+    }
+
+    // ion-fab {
+    //     transition: .5s;
+       
+    //     top: 610px;
+    // }
+        ion-fab.right-align {
+            margin-left: -0.1%;
+        }
+
+        ion-fab.left-align {
+            margin-left: -25.2%;
+        }
+
+        ion-fab.end-align {
+            margin-left: 24.7%;
+        }
+
+        ion-fab.start-align {
+            left: 7.5%;
+        }
+
+        ion-fab.lastEnd-align {
+            margin-left: 37%;
+        }
+    }
+
+    .bg-trans {
+        --background: transparent !important;
+    }
+
+    .curve-right-border {
+        border-top-right-radius: 20px !important;
+    }
+
+    .curve-left-border {
+        border-top-left-radius: 20px !important;
+    }
 }
 
 
 
+//////////////////////////////////////////////////
+// ion-tabs {
+//   // --------------Custom Semi Transparent & Rounded Tabs----------------------
+//   ion-tab-bar {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100vw;
+//     --background: transparent;
+//     border-radius: 20px 20px 0 0;
+//     --border: 0;
+//     left: 0;
+//     right: 0;
+//     // justify-content: space-around;
+//     // display:flex;
 
+//     ion-tab-button {
+//       --background: #fff;
+//       --color: var(--ion-color-medium);
+//       --color-selected: var(--ion-color-dark);
+//       ion-icon {
+//         font-size: 1.5rem;
+//         transition: 0.7s;
+//       }
 
+//       ion-label {
+//         font-weight: bold;
+//         //margin-top:20%;
+//         transition: 1s;
+//         transform: translateY(15px);
+//         --color: #222327;
+//       }
+//     }
+//   }
+//   svg {
+//     width: 80px;
+//     margin-top: 16px;
 
+//     path {
+//       background: #fff;
+//     }
+//   }
 
+//   img {
+//     position: absolute;
+//     background: red;
+//     transform: translateX(200px);
+//     width: 100px;
+//   }
 
+//   .Kid {
+//     animation: walking 3s linear;
+//   }
 
+//   @keyframes walking {
+//     25% {
+//       transform: translateX(200px);
+//     }
 
+//     50% {
+//       transform: translateX(400px);
+//     }
 
+//     75% {
+//       transform: translateX(600px);
+//     }
 
+//     100% {
+//       transform: translateX(800px);
+//     }
+//   }
 
+//   ion-tab-button.search {
+//     margin-right: -1px;
+//     margin-left: -2px;
+//     border-top-right-radius: 20px;
+//   }
+//   // ion-tab-button.wishlist {
+//   //     //margin-left: -1px;
+//   //     margin-right: -2px;
+//   //     border-top-left-radius: 20px;
+//   // }
+//   ion-tab-button.post {
+//     margin-left: -1px;
+//     margin-right: -2px;
+//     border-top-left-radius: 20px;
+//   }
+//   ion-fab {
+//     transition: 0.8s;
+//     //width:50px;
+//     height: 75px;
 
+//     ion-fab-button {
+//       --background: linear-gradient(
+//         to bottom,
+//         #c13584,
+//         #e1306c,
+//         #fd1d1d,
+//         #f56040,
+//         #f77737,
+//         #fcaf45,
+//         #ffdc80
+//       );
+//       ion-icon {
+//         font-size: 2rem;
+//       }
 
+//       ion-label {
+//         font-weight: bold;
+//         margin-top: 25%;
+//         --color: #222327;
+//       }
+//     }
+//   }
 
+//   ion-fab.right-align {
+//     margin-left: 0.9%;
+//   }
 
+//   ion-fab.left-align {
+//     margin-left: -17%;
+//   }
 
+//   ion-fab.end-align {
+//     margin-left: 13%;
+//   }
 
+//   ion-fab.start-align {
+//     left: 22.7%;
+//   }
+//   ion-fab.lastEnd-align {
+//     margin-left: 25%;
+//     margin-right: none;
+//   }
 
+//   @media only screen and (max-width: 900px) {
+//     ion-fab.right-align {
+//       margin-left: 2%;
+//     }
 
+//     ion-fab.left-align {
+//       margin-left: -26%;
+//     }
 
+//     ion-fab.end-align {
+//       margin-left: 19%;
+//     }
+//     ion-fab.start-align {
+//       left: 9%;
+//     }
 
-
-
-
-
-
-
-
-
+//     ion-fab.lastEnd-align {
+//       margin-left: 37%;
+//     }
+//   }
+// }
+// ///////////////////////////////////////////////////////
 // ion-tabs{
 // 	ion-fab {
 //         transition: 0.8s;
@@ -192,10 +338,9 @@ ion-tabs {
 //             ion-icon {
 //                 font-size: 2rem;
 //                 --color: #222327;
-              
+
 //            }
 
-           
 // 		}
 // 	}
 // 	ion-tab-bar {
@@ -222,7 +367,6 @@ ion-tabs {
 //                 font-size: 1.5rem;
 //                 transition: 0.7s;
 //                 --color: #222327;
-               
 
 //             }
 // 		}
@@ -234,12 +378,12 @@ ion-tabs {
 // 			margin-left: 0px;
 // 			border-top-left-radius: 18px;
 // 		}
-// 		svg {    
+// 		svg {
 // 			width: 72px;
 // 			margin-top: 19px;
 // 			path{
 // 				fill:  var(--ion-color-dark);
-// 			}		
+// 			}
 // 		}
 // 	}
 
@@ -259,12 +403,11 @@ ion-tabs {
 //         left: 3.8%;
 //     }
 
-
 //     @media  only screen  and (max-width: 500px) {
 //         ion-fab.right-align{
 //             margin-left: 13%;
 //         }
-    
+
 //         ion-fab.left-align{
 //             margin-left: -27%;
 //         }
